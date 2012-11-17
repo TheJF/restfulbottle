@@ -45,7 +45,7 @@ def view_wiki(name=''):
    return template('views/show_wiki.tpl', page=page)
 
 @route('/wikis/<name>/edit')
-def view_wiki(name=''):
+def edit_wiki(name=''):
    page = pages.find_one({'name':name})
    return template('views/edit_wiki.tpl', page=page)
 
